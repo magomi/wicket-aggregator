@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en"
+      xmlns:wicket="http://wicket.apache.org/dtds.data/wicket-xhtml1.4-strict.dtd">
+<head>
+    <title>create a recipe</title>
+    <wicket:head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    </wicket:head>
+</head>
+
+<body>
+
+<div id="header" class="container_17"></div>
+
+<div id="content">
+
+    <form wicket:id="form">
+
+        <div class="container_17">
+
+            <div class="grid_2 ">
+                <label for="query">Suche</label>
+            </div>
+
+            <div class="grid_15 ">
+                <input style="width:100%;" type="text" wicket:id="query" id="query"  value="search query"/>
+            </div>
+
+
+        </div>
+
+
+        <div class="container_17">
+
+            <div class="grid_2 ">
+                &nbsp;
+            </div>
+
+            <div id="speichern" class="grid_2 ">
+                <input type="button" wicket:id="search" value="Suchen" />
+            </div>
+
+            <div class="grid_13 ">
+                &nbsp;
+            </div>
+
+        </div>
+
+        <div wicket:id="tweetsWmc" class="container_17">
+
+            <div wicket:id="tweets">
+
+                <div class="grid_2 ">
+                    <span wicket:id="fromUser"></span>
+                </div>
+
+                <div class="grid_15 ">
+                    <span wicket:id="text"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </form>
+
+</div>
+
+<div id="footer" class="container_17"></div>
+
+</body>
+
+
+</html>
+
