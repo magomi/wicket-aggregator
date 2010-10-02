@@ -10,9 +10,8 @@ public class TwitterAggregator {
         List<Tweet> tweets = new ArrayList<Tweet>();
         try {
             Twitter twitter = new TwitterFactory().getInstance();
-            Query twQuery = new Query("#onedaytalk");
+            Query twQuery = new Query(query);
             QueryResult result = twitter.search(twQuery);
-            // System.out.println("hits:" + result. getTotal());
             tweets = result.getTweets();
         } catch (TwitterException e) {
             e.printStackTrace();

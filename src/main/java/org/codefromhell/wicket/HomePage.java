@@ -58,6 +58,7 @@ public class HomePage extends WebPage {
             @Override
             protected void onSubmit(AjaxRequestTarget target, Form<?> form) {
                 TwitterAggregator ta = new TwitterAggregator();
+
                 tweets = ta.searchTweets(query);
 
                 target.addComponent(tweetsWmc);
