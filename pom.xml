@@ -73,6 +73,19 @@
             <artifactId>twitter4j-core</artifactId>
             <version>2.1.4</version>
         </dependency>
+
+        <!-- RSS -->
+        <dependency>
+            <groupId>rome</groupId>
+            <artifactId>rome</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>xerces</groupId>
+            <artifactId>xercesImpl</artifactId>
+            <version>2.9.1</version>
+        </dependency>
+        
     </dependencies>
 
     <build>
