@@ -2,10 +2,14 @@ package org.codefromhell.wicket.aggregator.twitter;
 
 import twitter4j.*;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TwitterAggregator {
+public class TwitterAggregator implements Serializable {
+
+    private static final long serialVersionUID = 2L;
+
     public List<Tweet> searchTweets(String query) {
         List<Tweet> tweets = new ArrayList<Tweet>();
         try {

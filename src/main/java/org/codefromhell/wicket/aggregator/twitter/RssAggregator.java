@@ -8,12 +8,16 @@ import com.sun.syndication.io.XmlReader;
 import twitter4j.*;
 
 import java.io.IOException;
+import java.io.Serializable;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
-public class RssAggregator {
+public class RssAggregator implements Serializable {
+
+    private static final long serialVersionUID = 1L;
+    
     public List<SyndEntry> getFeedEntries(String feedUrl) {
         List<SyndEntry> entries = new ArrayList<SyndEntry>();
 

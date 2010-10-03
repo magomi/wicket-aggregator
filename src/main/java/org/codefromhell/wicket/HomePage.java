@@ -38,7 +38,7 @@ import java.util.List;
  */
 public class HomePage extends WebPage {
 
-	private static final long serialVersionUID = 1L;
+	private static final long serialVersionUID = 4L;
 
     private List<Tweet> tweets = new ArrayList<Tweet>();
     private String query = "#wicket";

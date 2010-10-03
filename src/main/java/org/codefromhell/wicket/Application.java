@@ -10,8 +10,10 @@ import org.apache.wicket.session.ISessionStore;
  *
  * @author Marco Grunert (magomi@gmail.com)
  */
-public class Application extends WebApplication
-{    
+public class Application extends WebApplication {
+
+    private static final long serialVersionUID = 3L;
+
 	/**
 	 * Constructor.
 	 */
